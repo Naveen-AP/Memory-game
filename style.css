@@ -1,0 +1,94 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #c5d2c3;
+}
+
+h3{
+    font-size:2rem;
+    text-align: center;
+    color:crimson
+}
+
+.game{
+    display:grid;
+    margin:40px auto;
+    grid-template-columns: repeat(4,120px);
+    grid-row-gap:2em;
+    align-items: center;
+    justify-content: center;
+}
+
+#gameBoard div{
+    height:150px;
+    width:80px;
+    border:2px solid rgb(151, 151, 202);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:2em;
+    color:brown;
+    background-color: #e5e5f7;
+   
+}
+
+.cardback{
+    background-color: #c5d2c3;
+    opacity: 0.8;
+    background-image:  linear-gradient(135deg, #444cf7 25%, transparent 25%), linear-gradient(225deg, #444cf7 25%, transparent 25%), linear-gradient(45deg, #444cf7 25%, transparent 25%), linear-gradient(315deg, #444cf7 25%, #e5e5f7 25%);
+    background-position:  10px 0, 10px 0, 0 0, 0 0;
+    background-size: 10px 10px;
+    background-repeat: repeat;
+}
+
+#gameBoard div:hover{
+    cursor:pointer;
+}
+
+.won{
+    font-size:3em;
+    display:flex;
+    justify-content:center;
+    height:500px;
+    align-items: center;
+    color:blue;
+    width:500px;
+    margin:0px auto;
+}
+
+.game-over{
+    font-size:2em;
+    display:flex;
+    justify-content:center;
+    height:500px;
+    align-items: center;
+    color:blue;
+    width:500px;
+    margin:0px auto;
+}
+.times
+{
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    width: 200px;
+    height: 300px;
+    padding: 20px;
+    box-shadow: 1px 1px 1px 2px grey;
+   
+}
+#timer
+{
+    margin-top: 80px;
+    margin-left: 20px;
+}
+#score
+{
+    margin-left: 20px;
+}
+#restartButton
+{
+    margin: 10px;
+    padding: 10px;
+}
